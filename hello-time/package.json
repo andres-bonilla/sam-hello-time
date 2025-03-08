@@ -1,0 +1,23 @@
+{
+  "name": "hello-time",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "vitest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andres-bonilla/sam-hello-time.git"
+  },
+  "author": "Andrés Bonilla",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andres-bonilla/sam-hello-time/issues"
+  },
+  "homepage": "https://github.com/andres-bonilla/sam-hello-time#readme",
+  "devDependencies": {
+    "vitest": "^3.0.8"
+  }
+}
