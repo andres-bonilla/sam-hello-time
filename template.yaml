@@ -1,0 +1,37 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  hello-time
+
+  Sample SAM Template for hello-time
+  
+Globals:
+  Function:
+    Timeout: 3
+
+Resources:
+  HelloTimeFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: hello-time/
+      Handler: index.helloTimeHandler
+      Runtime: nodejs22.x
+      Architectures:
+        - x86_64
+      Events:
+        HelloTime:
+          Type: Api
+          Properties:
+            Path: /hello
+            Method: get
+
+Outputs:
+  HelloTimeApi:
+    Description: "API Gateway endpoint URL for Prod stage for Hello Time lambda function"
+    Value: !Sub "https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/hello/"
+  HelloTimeFunction:
+    Description: "Hello Time Lambda Function ARN"
+    Value: !GetAtt HelloTimeFunction.Arn
+  HelloTimeFunctionIamRole:
+    Description: "Implicit IAM Role created for Hello Time lambda function"
+    Value: !GetAtt HelloTimeFunctionRole.Arn
