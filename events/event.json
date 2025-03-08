@@ -1,0 +1,33 @@
+{
+  "body": "",
+  "resource": "/hello",
+  "path": "/hello",
+  "httpMethod": "GET",
+  "isBase64Encoded": false,
+  "queryStringParameters": {
+    "name": "Pedro"
+  },
+  "pathParameters": {},
+  "stageVariables": {},
+  "headers": {
+    "Accept": "text/html",
+    "User-Agent": "Custom User Agent String"
+  },
+  "requestContext": {
+    "accountId": "123456789012",
+    "resourceId": "123456",
+    "stage": "prod",
+    "requestId": "c6af9ac6-7b61-11e6-9a41-93e8deadbeef",
+    "requestTime": "09/Apr/2015:12:34:56 +0000",
+    "requestTimeEpoch": 1428582896000,
+    "identity": {
+      "sourceIp": "202.89.233.0",
+      "userAgent": "Custom User Agent String"
+    },
+    "path": "/prod/hello",
+    "resourcePath": "/hello",
+    "httpMethod": "GET",
+    "apiId": "1234567890",
+    "protocol": "HTTP/1.1"
+  }
+}
