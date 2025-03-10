@@ -62,8 +62,6 @@ Este proyecto utiliza [Vitest](https://vitest.dev/) para realizar pruebas unitar
     npm run test
     ```
 
-    Vitest ejecutará los tests y mostrará los resultados en la consola.
-
-    Aquí tienes el README actualizado con la mención de API Gateway en la descripción inicial:  
+    Vitest ejecutará los tests y mostrará los resultados en la consola. 
 
 ---
